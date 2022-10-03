@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    color: black 30%, brown 30%, slategray 40%;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    margin-left: 30%;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-bottom: 10px groove rgb(33, 48, 33);
+}
+#count{
+    margin-left: 30%;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family:'Trebuchet MS';
+}
+#ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 170px;
+    left: 3px;
+}
+.animate{ 
+    animation: jump 500ms ;
+}
+#restart{
+    background-color: bisque;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 5px;
+    
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#quit{
+    background-color: bisque;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 5px;
+    
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@keyframes jump{
+    0%{top: 170px;}
+    30%{top: 140px ;}
+    70%{top: 140px;}
+    100%{top: 170px;}
+}
+#wall{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    position: relative;
+    top: 150px;
+    left: 480px;
+    animation: wall 1.1s infinite linear;
+}
+@keyframes wall{
+    0%{left: 480px;}
+    100%{left: -10px;}
+}
